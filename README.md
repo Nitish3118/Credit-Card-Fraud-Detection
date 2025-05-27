@@ -1,1 +1,9 @@
-# Credit-Card-Fraud-Detection
+# 💳 Credit Card Fraud Detection using Unsupervised Learning
+
+This project focuses on identifying fraudulent credit card transactions by applying unsupervised machine learning techniques, specifically the Isolation Forest algorithm. Fraud detection is a significant challenge in the financial sector, mainly because of the highly imbalanced nature of transaction data—fraudulent cases are extremely rare compared to genuine ones. The aim of this project is to develop an anomaly detection model that can flag suspicious activities without relying on labeled data.
+
+The dataset used in this project comes from a publicly available source on Kaggle, titled “Credit Card Fraud Detection.” It contains anonymized features representing various transaction details, along with ‘Amount’ and ‘Time’ as continuous variables. Although the original dataset includes class labels for evaluation purposes, the model is designed to work in an unsupervised setting where such labels are typically unavailable.
+
+For this implementation, the key steps involve selecting relevant features, training an Isolation Forest model, and then using it to detect outliers, which are treated as potential frauds. The model assumes that fraudulent transactions are rare and different enough from regular patterns to be considered anomalies. Once predictions are made, the results are visualized using a scatter plot to highlight how frauds differ in terms of transaction amount and time.
+
+This project serves as a practical example of how anomaly detection can be effectively applied to real-world financial problems. It demonstrates how to preprocess data, build a model, and visualize results in a meaningful way—all without needing labeled training data. The code is written in Python using libraries such as pandas, scikit-learn, and matplotlib. You can run the project by cloning this repository and executing the notebook or script provided.
